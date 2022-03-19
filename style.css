@@ -1,0 +1,158 @@
+*{
+    margin: 0;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    scroll-behavior: smooth;
+}
+
+#navbar{
+    position: fixed;
+    top: 0;
+    width: 100vw;
+    height: 50px;
+    background: #5A1846;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    font-size: 2rem;
+}
+
+#navbar p a{
+    text-decoration: none;
+    color: white;
+}
+
+#welcome-section{
+    height: 100vh;
+    background: #FFC301;
+    margin-top: 50px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    gap: 20px;
+}
+
+#welcome-section__h1{
+    font-size: 5rem;
+}
+
+#welcome-section__p{
+    font-size: 1.5rem;
+    color: white;
+}
+
+#projects{
+    width: 100vw;
+    height: 1000px;
+    background: #FF5733;
+    padding: 20px;
+    display: grid;
+    gap: 50px;
+    grid-template-areas:
+    "title title"
+    "project_1 project_2"
+    "project_3 project_4"
+    "show show";
+}
+
+@media (max-width: 800px){
+    #projects{
+        display: flex;
+        flex-direction: column;
+        height: fit-content;
+    }
+}
+
+.project-tile{
+    grid-area: title;
+    margin: 0 auto;
+    font-size: 2.5rem;
+}
+
+.project_1{
+    display: grid;
+    grid-area: project_1;
+    background: #FFC301;
+    width: 350px;
+    height: 350px;
+    margin: 0 auto;
+}
+
+.project__ img{
+    width: 350px;
+    height: 300px;
+}
+
+figcaption{
+    font-size: 1.2rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 5px;
+}
+
+.project_2{
+    display: grid;
+    grid-area: project_2;
+    background: #FFC301;
+    width: 350px;
+    height: 350px;
+    margin: 0 auto;
+}
+
+.project_3{
+    display: grid;
+    grid-area: project_3;
+    background: #FFC301;
+    width: 350px;
+    height: 350px;
+    margin: 0 auto;
+}
+
+.project_4{
+    display: grid;
+    grid-area: project_4;
+    background: #FFC301;
+    width: 350px;
+    height: 350px;
+    margin: 0 auto;
+}
+
+#show-all{
+    grid-area: show;
+    margin: 10px auto;
+    padding: 10px;
+    width: 200px;
+    height: 50px;
+    background: wheat;
+    font-weight: 500;
+}
+
+.container{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.container h2 a{
+    text-decoration: none;;
+}
+
+#footer{
+    width: 100vw;
+    height: 150px;
+    color: wheat;
+    background: #5A1846;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+#footer h2, #footer p{
+    padding: 10px;
+}
+
+#footer h2{
+    font-size: 3rem;
+}
